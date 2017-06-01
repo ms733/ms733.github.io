@@ -1,0 +1,55 @@
+/*가이드라인*/
+
+body {
+    margin: 0;
+    background: url("../img/leading-pattern-21.png");
+    height: 100vh;
+    /*본문 디자인 공통*/
+    color:#333741;
+    font: 65.625%/2 'Spoqa Han Sans';
+    letter-spacing: -0.02em;
+}
+
+/*단락디자인*/
+p {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+
+
+/*제목디자인*/
+h1,h2,h3,h4,h5,h6 {
+    margin-top:0;
+    
+}
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
+h5,h6 {
+    font-weight: 400;
+}
+
+
+
+h2 {
+    font-size: 3.90em;
+    line-height:1.5384;
+    margin-bottom: 0.5128em;
+}
+
+h6 {
+    /*1em=10.5px*/
+    /*본문 글자 크기 x 글자 크기 배율* ; or  해당글자크기/본문글자크기 */
+    font-size: 2.26em;
+    /*행간 = 디자인 상의 줄 개수 x (행간비율/글자크기비율)*/
+    line-height: 1.7699;
+    /*아래쪽 마진 = 행간비율/글자크기비율*/
+    margin-bottom: 0.8849em;
+}
+
+.container {
+    width:640px;
+    margin-left: auto;
+    margin-right:auto;
+}

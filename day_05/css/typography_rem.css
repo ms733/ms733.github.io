@@ -1,0 +1,56 @@
+html {
+    /*rem 단위의 기준 설정값*/
+    /*왜? 10px로 설정하냐면 계산이 쉽자냐~*/
+    font-size: 10px;
+}
+
+
+/*가이드라인*/
+
+body {
+    margin: 0;
+    background: url("../img/leading-pattern-21.png");
+    height: 100vh;
+    /*본문 디자인 공통*/
+    color:#333741;
+    font: 1.05rem/2 'Spoqa Han Sans';
+    letter-spacing: -0.02em;
+}
+
+/*단락디자인*/
+p {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+}
+
+
+
+/*제목디자인*/
+h1,h2,h3,h4,h5,h6 {
+    margin-top:0;
+    margin-bottom:2.1rem;
+}
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
+h5,h6 {
+    font-weight: 400;
+}
+
+
+
+h2 {
+    font-size: 4.097rem;
+
+}
+
+h6 {
+    font-size: 2.377rem;
+
+}
+
+.container {
+    width:640px;
+    margin-left: auto;
+    margin-right:auto;
+}
