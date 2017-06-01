@@ -1,0 +1,32 @@
+body {
+    margin: 4rem;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    font: 700 1.45rem Verdana;
+    color:#fff;
+    float: left;
+    margin-right: 2rem;
+}
+
+/*div 박스 안에 글자 가로 세로 중앙정렬*/
+.is-central {
+    text-align: center;
+    line-height: 200px;
+}
+
+.primary {
+    background-color: #de0c56;
+}
+.secondary {
+    background-color: #b70cde;
+}
+.aother {
+    background-color: #130cde;
+}
+.etc {
+    background-color: #de840c;
+    margin-right: 0;
+}

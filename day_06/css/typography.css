@@ -1,0 +1,102 @@
+html {
+    /*rem 단위의 기준 설정값*/
+    /*왜? 10px로 설정하냐면 계산이 쉽자냐~*/
+    font-size: 10px;
+    /*UI 화면축이 움직이지 않도록 설정_스크롤이 있다없다하면 축이 흔들리니까*/
+    overflow-y:scroll;
+}
+
+
+/*가이드라인*/
+
+body {
+    margin: 0;
+    /*본문 디자인 공통*/
+    color:#333741;
+    font: 1.05rem/2 'Spoqa Han Sans';
+    letter-spacing: -0.02em;
+}
+
+body.grid {
+    background: url("../img/leading-pattern-21.png");
+    height: 100vh;
+}
+
+/*목록 디자인 초기화*/
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+    padding-left:0;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul.is-horizontal li {
+    float: left;
+    margin-right: 3rem;
+}
+
+/*하이퍼링크 초기화*/
+a {
+    display: block;
+}
+
+/*하이퍼링크 상태디자인*/
+a:link {
+    color:#275bde;
+    text-decoration: none;
+}
+a:visited {
+    color: #6827de;
+}
+a:hover {
+    color: #27a0de;
+}
+a:active {
+    background:yellow;
+    color:#000;
+}
+a:focus {
+    outline: 3px solid red;
+}
+
+
+/*단락디자인*/
+p {
+    margin-top: 0;
+    margin-bottom: 2.1rem;
+}
+
+
+
+/*제목디자인*/
+h1,h2,h3,h4,h5,h6 {
+    margin-top:0;
+    margin-bottom:2.1rem;
+}
+h1,h2,h3,h4 {
+    font-weight: 300;
+}
+h5,h6 {
+    font-weight: 400;
+}
+
+
+
+h2 {
+    font-size: 4.097rem;
+
+}
+
+h6 {
+    font-size: 2.377rem;
+
+}
+
+.container {
+    width:640px;
+    margin-left: auto;
+    margin-right:auto;
+}
