@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+.banner {
+    width: 800px;
+    height: 320px;
+    background: #222;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:-160px;
+    margin-left:-400px;
+}
