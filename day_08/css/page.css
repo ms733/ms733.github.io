@@ -44,13 +44,13 @@ p, h1, h3, h5, h6 {
   margin-bottom: 2.1rem;
 }
 
-.order-image {
+.order-img {
   float: left;
 }
 
 .order-content{
   overflow: hidden;
-  padding-left: 10px;
+  padding-left: 2rem;
 }
 
 /* 단락 디자인 */
