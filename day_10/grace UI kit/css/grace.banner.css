@@ -1,3 +1,10 @@
+@charset "utf-8";
+
+::selection {
+    background: #dba68f;
+    color:#fff;
+}
+
 
 /* 웹 폰트 모듈 */
 
@@ -30,6 +37,11 @@
     border: 1px solid #cdcdcd; 
     /*box-shadow: 0 0 10px rgba(0, 0, 0,0.2);*/
     border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out 1s;
+    /*transition: 액션속성 작동 초 수 ease-in-out 지연 초 수;*/
+}
+.grace-ui.banner:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.2);
 }
 
 .is-center {
