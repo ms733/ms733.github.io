@@ -1,0 +1,92 @@
+
+/* 웹 폰트 모듈 */
+
+.montserrat{ 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+.is-bold {
+    font-weight: 700;
+}
+
+.baskerville {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 300;
+}
+
+.is-italic {
+    font-style: italic;
+}
+
+
+
+.grace-ui.banner {
+    width: 580px;
+    height: 215px;
+    /*background: color url() repeat top left scroll*/ 
+    background: #fff url('../images/people.png') no-repeat 88px 9px;
+    border: 1px solid #cdcdcd; 
+    /*box-shadow: 0 0 10px rgba(0, 0, 0,0.2);*/
+    border-radius: 10px;
+}
+
+.is-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -107.5px;
+    margin-left: -290px;
+}
+
+
+.banner-catecory {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 97px;
+    left: 20px;
+}
+
+.banner-headline {
+    color: #dba68f;
+    font-size: 36px;
+    line-height: 1.1111;
+    position: absolute;
+    top: -8px;
+    right: 60px;
+}
+
+.banner-review-link {
+    text-decoration: none;
+    color:#fff;
+    padding: 1em 1.5em;
+    border-radius: 1.5em;
+    background: #000;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 121px;
+    right: 43px;
+}
+
+.banner-review {
+    position: absolute;
+    bottom: 13px;
+    right: 92px;
+}
+
+.banner-review *{
+    padding-left: 24px;
+    font-size: 13px;
+}
+.review-view {
+    background: url('../images/icon-view.svg') no-repeat 0 50%;
+    margin-right: 20px;
+}
+.review-comments {
+    background: url('../images/icon-comments.svg') no-repeat 0 50%;
+}
