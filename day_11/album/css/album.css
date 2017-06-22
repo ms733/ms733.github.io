@@ -1,0 +1,63 @@
+
+html {
+    background: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+.vignette {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, #999, #333);
+}
+
+.album {
+    position: fixed;
+    top:50%;
+    left:50%;
+    width: 287px;
+    height: 287px;
+    transform: translate(-50%,-50%);
+}
+
+.album-item.cover {
+    z-index: 100;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
+    /*box-shadow: 
+    0 3px 6px rgba(0, 0, 0, 0.45),
+    0 3px 6px rgba(0, 0, 0, 0.45),
+    0 3px 6px rgba(0, 0, 0, 0.45);*/
+}
+
+.album-item.sleeve {
+    z-index: 10;
+}
+
+
+
+/* 트랜지션 초기값과 속성값 주기*/
+.album-item {
+    position: absolute;
+    top:0;
+    right: 0;
+    transition: all 1s ease-in-out; /* 장면전환시 변화되는 속성값*/
+}
+
+
+/*hover 효과*/
+.album:hover .album-item.sleeve {
+    right: -25px;
+    top: -5px;
+}
+
+.album:hover .album-item.disk {
+    right: -80px;
+    top: -5px;
+    transform: rotate(720deg); /* hover 시 로테이션 되어라*/
+}
