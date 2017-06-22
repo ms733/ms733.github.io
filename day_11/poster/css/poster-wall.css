@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background: #333;
+}
+
+.poster.wall-e {
+    width: 1000px;
+    height: 1000px;
+    /* 멀티 백그라운드 */
+    background: url("../images/soundtrack.png") no-repeat 166px 35px,     
+    url("../images/disney-pixar.png") no-repeat 362px 88px,     
+    url("../images/logo.png") no-repeat 107px 123px,     
+    url("../images/eve.png") no-repeat 570px 300px,     
+    url("../images/wall-e.png") no-repeat 263px 343px,     
+    url("../images/m-o.png") no-repeat 202px 698px,     
+    url("../images/music.png") no-repeat 150px 930px,
+    /*linear-gradient(각도 방향, 시작 컬러값 로케이션 , 끝 컬러값 로케이션)*/
+    linear-gradient(180deg, #332f47 20%, #5a47bb 80%);
+    /* 배율(scale transform) 변형 */
+    /*transform: scale(0.5) translateX(-100%) translateY(-25%);*/
+}
+
+
+.poster.is-center-x {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+.poster.is-center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    /*tranlate 박스 자신의 가로,세로 길이 위치 이동_최신브라우저만 지원*/
+    transform: translate(-50%, -50%);
+}
+
