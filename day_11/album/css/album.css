@@ -59,5 +59,40 @@ body {
 .album:hover .album-item.disk {
     right: -80px;
     top: -5px;
-    transform: rotate(720deg); /* hover 시 로테이션 되어라*/
+    transform: rotate(720deg); /* hover시 로테이션 되어라*/
+}
+
+
+/* 앨범 open(=hover) 상태에서 애니메이션 */
+.album.open:hover .album-item.disk {
+    animation: infinite-retate-disk 10s infinite;
+}
+/* 사용자 애니메이션 정의 */
+/* 키 프레임 등록해서 프레임마다 스타일 설정 */
+
+@keyframes infinite-rotate-disk {
+  /* 키 프레임 */
+  /* 시작(from) - 끝(to) */
+  /*from {
+    transform: rotate(720deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }*/
+  /* 시작(0%) - 끝(100%) */
+  /*0% {
+    transform: rotate(720deg);
+  }
+  25% {
+    transform: rotate(720deg);
+  }
+  50% {
+    transform: rotate(720deg);
+  }
+  75% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }*/
 }
