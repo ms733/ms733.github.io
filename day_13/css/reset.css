@@ -1,0 +1,120 @@
+html {
+	font-size:10px;
+	background:#fff;
+}
+
+body {
+	margin:0;
+	font-family: 'Lato', sans-serif;
+}
+
+
+	/*전체 레이아웃 폭*/
+body.guide-layout::before {
+	z-index:10000;
+	content:'';
+	position:absolute;
+	top:0;
+	left:50%;
+	height:200vh;
+	width:1280px;
+	margin-left:-640px;
+}
+
+
+	/*컬럼그리드*/
+body.colums::before {
+
+	background: linear-gradient(90deg, hsla(246, 60.2%, 63.4%, 0.4) 50%, hsla(246, 60.2%, 63.4%,, 0.2) 50%);
+    background-size: 320px 1px;
+}
+
+
+	/*베이스라인*/
+body.guide.baseline::before {
+
+	background: linear-gradient(180deg, transparent 23px, #609cff 23px);
+    background-size: 1px 24px;
+}
+
+
+	/*칼럼 & 베이스라인*/
+body.columns-baseline::before {
+	background: linear-gradient(180deg, transparent 23px, #609cff 23px),
+	                linear-gradient(90deg, hsla(246, 60.2%, 63.4%, 0.4) 50%, hsla(246, 60.2%, 63.4%, 0.2) 50%);
+    background-size: 1px 24px, 320px 1px;
+}
+
+
+	/*container모듈*/
+.container {
+	width:1280px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+	/*row모듈*/
+.row::after,
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+
+	/*column모듈*/
+
+.column {
+	float:left;
+}
+.is-1 {
+	width:160px;
+}
+.is-2 {
+	width:320px;
+}
+.is-3 {
+	width:480px;
+}
+.is-4 {
+	width:640px;
+}
+.is-5 {
+	width:800px;
+}
+.is-6 {
+	width:960px;
+}
+.is-7 {
+	width:1120px;
+}
+.is-8 {
+	width:1280px;
+}
+
+
+.is-offset-1 {
+	width:160px;
+}
+.is-offset-2 {
+	width:320px;
+}
+.is-offset-3 {
+	width:480px;
+}
+.is-offset-4 {
+	width:640px;
+}
+.is-offset-5 {
+	width:800px;
+}
+.is-offset-6 {
+	width:960px;
+}
+.is-offset-7 {
+	width:1120px;
+}
+.is-offset-8 {
+	width:1280px;
+}

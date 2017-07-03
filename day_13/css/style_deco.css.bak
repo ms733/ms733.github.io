@@ -1,0 +1,29 @@
+
+.logo {
+	margin-top:40px;
+}
+
+.head-line {
+	font-weight:100;
+	font-size:9rem;
+	line-height:7.35rem;
+	margin-top:140px;
+}
+
+.contents {
+	font-size:1.2rem;
+	color:#969595;
+}
+
+.lipstick{
+	position:relative;
+	left:-120px;
+}
+
+.fix-position {
+	position:fixed;
+}
+.right-bottom {
+	right:0;
+	bottom:0;
+}

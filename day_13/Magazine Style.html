@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Magazine</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style_deco.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+ </head>
+   <!--작업이 끝나면 body클래스는 삭제해준다.-->
+ <body class="guide-layout columns-baseline">
+
+  <div class="container">
+	<div class="row">
+		<div class="column is-2">
+			<img src="img/Symbol.png" class="logo" alt="">
+		</div>
+
+		<div class="column is-4">
+			<h1 class="head-line">the <br>crystal<br> goblet</h1>
+			<p class="contents">Konsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			<p class="contents">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br> fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+			<img src="img/Lipstick.png" class="lipstick" alt="">
+			</div>
+
+		<img src="img/model.png" class="fix-position right-bottom" alt="">
+	</div>
+  </div>
+
+
+<!--그리드 보였다 안보였다 하눈고-->
+<!--shift+g키 누르면 '.guide-layout'안보이게 해주는 코드-->
+<script>
+document.onkeydown = function(e){
+  if (e.keyCode === 71 && e.shiftKey) { document.body.classList.toggle('guide-layout'); }
+}
+</script>
+
+
+
+ </body>
+</html>
