@@ -1,0 +1,67 @@
+/* 중단 점 설계 */
+
+/* 컨텐츠 우선 고려 : 중요한 것은 기기가 아니라, 콘텐츠이다.*/
+/* [o] 모바일 환경 우선 고려 */
+/* [x] 데스크탑 환경 우선 고려*/
+/* 폰 기본 배율 (x1) = > 사용자조사, 환경분석, 통계 = 전략수립*/
+/* 320 - 480 - 640 - 800 - 960 -1024 - 1280 - 1440 -1600 - 1920 */
+
+
+/* 미디어 쿼리 스크린 & 프린트 */
+@media screen {
+    html {
+        font-size:  100%;
+    }
+    body {
+        height: 100vh;
+        background: #000;
+        color: #fff;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        font-weight: 100;
+    }
+    a[href] {
+        color: #fff;
+        text-decoration: none;
+    }
+
+}
+
+@media print {
+    body {
+        height: 29.7cm;
+        background: #fff;
+        color: #000;
+        line-height: 1.1;
+    }
+    a[href] {
+        color: #000;
+        text-decoration: none;
+    }
+    a[href]::after {
+        content:' (' attr(href) ')';
+    }
+}
+
+/* 중단점을 고려한 레이아웃 변경 미디어쿼리*/
+@media screen and (min-width:960px) {
+    body {
+        background: #dedede;
+        font-size: 14px;
+        line-height: 1.5;
+        font-size: 0.875rem;
+    }
+    .box {
+        width:17%;
+        float: left;
+        margin-right: 1%;
+        border:  1px solid #dedede;
+        padding: 1.45em 2em;
+        background: #fff;
+        color:#000;
+    }
+
+}
